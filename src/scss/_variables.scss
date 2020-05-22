@@ -1,4 +1,20 @@
 :root {
   --primary: hotpink;
   --secondary: skyblue;
+  --primary-bg: #ffca28;
+  --primary-bg: #f9aa33;
+  --primary-bg-light: #fffd61;
+  --primary-bg-dark: #c79a00;
+  --primary-text: #212121;
+  --secondary-bg: #03a9f4;
+  --secondary-bg: #232f34;
+  --secondary-bg-light: #67daff;
+  --secondary-bg-dark: #007ac1;
+  --secondary-text: #212121;
+
+  --primary-bg: #f9aa33;
+  --secondary-bg: #232f34;
+  --main-text: var(--secondary-bg);
+  --secondary-text: white;
+  --primary-text: var(--secondary-bg);
 }

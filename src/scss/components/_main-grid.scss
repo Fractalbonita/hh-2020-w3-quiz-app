@@ -1,5 +1,16 @@
 .main-grid {
   display: grid;
-  grid-template-rows: 48px auto 48px;
+  grid-template-rows: 48px auto 60px;
   height: 100vh;
+}
+.main__content {
+  display: grid;
+  gap: 20px;
+  overflow: scroll;
+  padding: 20px;
+  &::after {
+    content: " ";
+    display: block;
+    height: 1px;
+  }
 }
