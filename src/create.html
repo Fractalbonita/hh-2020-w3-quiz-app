@@ -1,11 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizzes - Create Question Cards</title>
+    <link rel="stylesheet" href="scss/styles.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+  </head>
+  <body class="main-grid">
+    <header class="main-header">
+      <h1>Create</h1>
+      <!--Start search form-->
+      <form action="https://" method="get" role="search">
+        <label class="search">
+          <i class="fas fa-search"></i>
+          <span class="search__label--hidden">Search</span>
+          <input
+            type="search"
+            id="search"
+            class="search__input"
+            name="search"
+            autocomplete="off"
+            spellcheck="true"
+            aria-label="Search the quiz-app"
+            placeholder="e.g. foo"
+          />
+        </label>
+      </form>
+      <!--End search form-->
+    </header>
+    <main class="main__content">
+      <form id="" class="form" action="" role="">
+        <h3>Create your own question card</h3>
+        <!--Start input field for question-->
+        <label for="add-question">Add your question:</label>
+        <textarea
+          class="form__control"
+          name="question"
+          id="add-question"
+          cols="30"
+          rows="10"
+          spellcheck="true"
+          placeholder="Write a question here..."
+          aria-describedby="question-hint"
+          required
+        >
+        </textarea>
+        <!--End input field for question-->
+        <!--Start input field for answer-->
+        <label for="add-answer">Add your answer:</label>
+        <textarea
+          class="form__control"
+          name="answer"
+          id="add-answer"
+          cols="30"
+          rows="10"
+          spellcheck="true"
+          placeholder="Write an answer here..."
+          aria-describedby="answer-hint"
+          required
+        >
+        </textarea>
+        <!--End input field for answer-->
+        <!--Start input field for tag-list-->
+        <label for="tag">Add tags: </label>
+        <input
+          class="form__control"
+          type="text"
+          name="keyword"
+          id="tag"
+          placeholder="Add tags separated by comma"
+          aria-labelledby="Add-comma-separated-tags"
+          required
+        />
+        <!--End input field for tag-list-->
+        <!--Button to submit question-->
+        <button name="submit" class="form__button">Submit</button>
+      </form>
+    </main>
+    <!--Start fixed navbar-->
+    <nav class="navigation">
+      <a class="navigation__link" href="/"
+        ><i class="fas fa-home"></i>Quizzes</a
+      >
+      <a class="navigation__link" href="/bookmarks.html"
+        ><i class="fas fa-bookmark"></i>Bookmarks</a
+      >
+      <span class="navigation__link navigation__link--active"
+        ><i class="fas fa-plus"></i>Create</span
+      >
+      <a class="navigation__link" href="/profile.html"
+        ><i class="fas fa-user"></i>Profile</a
+      >
+    </nav>
+    <!--End fixed navbar-->
+  </body>
 </html>
