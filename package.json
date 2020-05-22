@@ -1,5 +1,5 @@
 {
-  "name": "quiz-app",
+  "name": "Qizzes",
   "version": "0.0.1",
   "description": "A simple quiz app",
   "main": "index.html",
@@ -8,7 +8,7 @@
     "build": "parcel build src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Jeremias Erbs <jerry@badabam.de> (http://www.badabam.de/)",
+  "author": "Kathrin Korhammer <fractalbonita@mail.com>",
   "license": "UNLICENSED",
   "dependencies": {
     "parcel-bundler": "1.12.4"
