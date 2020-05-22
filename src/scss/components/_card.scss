@@ -1,12 +1,84 @@
 .card {
   padding: 20px;
-  background: #eee;
-  box-shadow: 0 6px 12px #0005;
-}
+  background: white;
+  box-shadow: 0 4px 8px #0004;
+  border-radius: 15px;
+  --margin: 1rem;
 
-.card__container {
-  display: grid;
-  gap: 20px;
-  overflow: scroll;
-  padding: 20px;
+  p {
+    margin: var(--margin) 0;
+  }
+
+  &__header {
+    display: grid;
+    grid-template-columns: auto 2em 2em;
+    align-items: center;
+
+    & a {
+      justify-self: end;
+      margin-right: 4px;
+    }
+    & i {
+      font-size: 1.3rem;
+    }
+  }
+
+  &__share i {
+    color: var(--primary-text);
+  }
+
+  &__share--hidden,
+  &__bookmark--hidden {
+    position: absolute;
+    top: -999%;
+    left: -999%;
+  }
+
+  &__bookmark {
+    i {
+      color: var(--primary-text);
+    }
+
+    &--saved i {
+      color: var(--primary-bg);
+    }
+  }
+
+  &__title {
+    color: var(--primary-text);
+  }
+
+  &__button {
+    background: var(--secondary-bg);
+    border: none;
+    //border: 1px solid var(--secondary-bg-dark);
+    border-radius: 15px;
+    padding: 5px 20px;
+    // margin: 0 auto;
+    display: block;
+    margin: var(--margin) 0;
+    color: var(--secondary-text);
+    cursor: pointer;
+  }
+
+  &__tag-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    & li {
+      display: inline-block;
+      padding: 2px 10px;
+      // border: 1px solid var(--primary-bg-dark);
+      border-radius: 15px;
+      background: var(--primary-bg);
+    }
+  }
+  &__answer {
+    display: none;
+
+    &--visible {
+      display: block;
+    }
+  }
 }
