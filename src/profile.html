@@ -1,11 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizzes - My Profile</title>
+    <link rel="stylesheet" href="scss/styles.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+  </head>
+  <body class="main-grid">
+    <header class="main-header">
+      <h1>Profile</h1>
+      <!--Start search form-->
+      <form action="https://" method="get" role="search">
+        <label class="search">
+          <i class="fas fa-search"></i>
+          <span class="search__label--hidden">Search</span>
+          <input
+            type="search"
+            id="search"
+            class="search__input"
+            name="search"
+            autocomplete="off"
+            spellcheck="true"
+            aria-label="Search the quiz-app"
+            placeholder="e.g. foo"
+          />
+        </label>
+      </form>
+      <!--End search form-->
+    </header>
+    <main class="main__content">
+      <a
+        class="profile__picture profile__picture-change"
+        href="#"
+        ui-cmd="change"
+        ui-cat="app-profile"
+        role="button"
+        ><img
+          src="images/victor-xok-vBK2tVGSr9o-unsplash.jpg"
+          alt="Change profile picture"
+      /></a>
+      <h2 class="profile__name">Name</h2>
+      <p class="profile__description">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic nam non ad
+        blanditiis error velit enim amet ex facilis dicta.
+      </p>
+      <h2 class="profile__skills">Skills</h2>
+      <ul>
+        <li>Skill1</li>
+        <li>Skill2</li>
+        <li>Skill3</li>
+        <li>Skill4</li>
+        <li>Skill5</li>
+        <li>Skill6</li>
+        <li>Skill7</li>
+      </ul>
+      <button name="log-out" class="button__submit">Log out</button>
+    </main>
+    <!--Start fixed navbar-->
+    <nav class="navigation">
+      <a class="navigation__link" href="/"
+        ><i class="fas fa-home"></i>Quizzes</a
+      >
+      <a class="navigation__link" href="/bookmarks.html"
+        ><i class="fas fa-bookmark"></i>Bookmarks</a
+      >
+      <a class="navigation__link" href="/create.html"
+        ><i class="fas fa-plus"></i>Create</a
+      >
+      <span class="navigation__link navigation__link--active"
+        ><i class="fas fa-user"></i>Profile</span
+      >
+    </nav>
+    <!--End fixed navbar-->
+  </body>
 </html>
