@@ -13,29 +13,23 @@
   <body class="main-grid">
     <header class="main-header">
       <h1>Create</h1>
-      <!--Start search form-->
-      <form action="https://" method="get" role="search">
-        <label class="search">
-          <i class="fas fa-search"></i>
-          <span class="search__label--hidden">Search</span>
-          <input
-            type="search"
-            id="search"
-            class="search__input"
-            name="search"
-            autocomplete="off"
-            spellcheck="true"
-            aria-label="Search the quiz-app"
-            placeholder="e.g. foo"
-          />
-        </label>
-      </form>
-      <!--End search form-->
     </header>
     <main class="main__content">
-      <form id="" class="form" action="" role="">
+      <form class="form">
         <h3>Create your own question card</h3>
-        <!--Start input field for question-->
+        <!--Start input field for topic-->
+        <label for="topic">Topic</label>
+        <input
+          type="text"
+          name="topic"
+          id="topic"
+          placeholder="Any topic goes here..."
+          aria-describedby="topic-hint"
+          required
+          class="form__control"
+        />
+        <!--End input field for topic-->
+        <!--Start textarea field for question-->
         <label for="add-question">Add your question:</label>
         <textarea
           class="form__control"
@@ -49,8 +43,8 @@
           required
         >
         </textarea>
-        <!--End input field for question-->
-        <!--Start input field for answer-->
+        <!--End textarea field for question-->
+        <!--Start textarea field for answer-->
         <label for="add-answer">Add your answer:</label>
         <textarea
           class="form__control"
@@ -64,9 +58,9 @@
           required
         >
         </textarea>
-        <!--End input field for answer-->
+        <!--End textarea for answer-->
         <!--Start input field for tag-list-->
-        <label for="tag">Add tags: </label>
+        <label for="tag">Add tags:</label>
         <input
           class="form__control"
           type="text"
@@ -78,7 +72,7 @@
         />
         <!--End input field for tag-list-->
         <!--Button to submit question-->
-        <button name="submit" class="form__button">Submit</button>
+        <button type="submit" name="submit" class="form__button">Submit</button>
       </form>
     </main>
     <!--Start fixed navbar-->
