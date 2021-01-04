@@ -1,7 +1,6 @@
 .navigation {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-
   &__link {
     display: flex;
     flex-direction: column;
@@ -9,16 +8,15 @@
     align-items: center;
     background: var(--secondary-bg);
     color: var(--secondary-text);
-    color: rgb(75, 156, 185);
+    color: var(--accent-bg);
     text-decoration: none;
     font-size: 1rem;
     padding-top: 4px;
-
     &--active {
       color: var(--primary-bg);
     }
     & i {
-      font-size: 1.5em;
+      font-size: 1.5rem;
       padding-top: 2px;
     }
   }

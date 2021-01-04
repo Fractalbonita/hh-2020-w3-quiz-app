@@ -1,28 +1,25 @@
 .search {
-  --height: 30px;
   display: flex;
   height: var(--height);
   cursor: pointer;
   border-radius: 15px;
   padding: 0 5px;
   align-items: center;
-
   &:focus-within {
-    background: #fff8e1;
+    background: var(--surface-bg);
     border: 1px solid var(--primary-bg-dark);
-    background: white;
+    background: var(--secondary-text);
     border: none;
   }
-
-  i {
+  &__icon {
     font-size: 1.3rem;
   }
-  .search__label--hidden {
+  &__label--hidden {
     position: absolute;
     top: -999%;
     left: -999%;
   }
-  .search__input {
+  &__input {
     background: transparent;
     width: 0px;
     line-height: calc(var(--height) - 2px);
@@ -31,7 +28,7 @@
     transition: all 0.3s;
     outline: none;
     // Reset default-styling in safari and other apple-crap
-    -webkit-appearance:none;
+    -webkit-appearance: none;
     &:focus {
       width: 100px;
       margin-left: 0.3rem;
