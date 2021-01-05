@@ -19,4 +19,4 @@ Simple static frontend quiz app
 
 ## Impressions
 
-<img src="./screenshots/Screenshot-quizzes.png" height="200"> <img src="./screenshots/Screenshot-bookmarks-search.png" height="200"> <img src="./screenshots/Screenshot-create.png" height="200"> <img src="./screenshots/Screenshot-profile.png" height="200">
+<img src="./screenshots/Screenshot-quizzes.png" height="300"> <img src="./screenshots/Screenshot-bookmarks-search.png" height="300"> <img src="./screenshots/Screenshot-create.png" height="300"> <img src="./screenshots/Screenshot-profile.png" height="300">
