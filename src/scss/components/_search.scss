@@ -27,6 +27,7 @@
     padding: 0;
     transition: all 0.3s;
     outline: none;
+    cursor: text;
     // Reset default-styling in safari and other apple-crap
     -webkit-appearance: none;
     &:focus {

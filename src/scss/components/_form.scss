@@ -1,18 +1,17 @@
 .form {
   padding-bottom: 10px;
-
   &__control {
     display: block;
     width: 100%;
     margin: 1rem 0;
   }
-
   &__button {
     background: var(--secondary-bg);
     border: none;
     border-radius: 15px;
-    padding: 5px 20px;
+    padding: 8px 20px;
     margin: var(--margin) 0;
     color: var(--secondary-text);
+    cursor: pointer;
   }
 }
